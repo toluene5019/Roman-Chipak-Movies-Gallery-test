@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Movies Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <h1>Movies Gallery</h1> 
+            <div class="options">
+                <form class="select-form">
+                    <select id="genres-select">
+                        <option value="default" disabled selected>Select Genre</option>
+                        <option value="all">all</option>
+                    </select>
+                </form>
+                <div class="view-block">
+                    <p>View as: </p>
+                    <i class="fa fa-th"></i>
+                    <i class="fa fa-th-list"></i>
+                </div>
+            </div>
+            <section class="card-view"></section>
+            <section class="list-view"></section>
+        </main>
+        <aside class="aside">
+            <h2 class="h2"><i class="fa fa-star star"></i> Favorite list</h2>
+            <div class="fav-list"></div>
+        </aside>
+    </div>
+
+    <div class="details-modal">
+        <div class="modal-window">
+            <button type="button" class="close-btn"><i class="fa fa-times"></i></button>
+            <div class="modal-media"></div>
+            <div class="modal-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
